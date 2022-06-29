@@ -1,0 +1,23 @@
+Create table Goalieequipment(id integer primary key, name text, Size integer, quantity integer, price integer);
+
+insert into Goalieequipment values(1, ' SR Leg pads', 29, 5, 3000);
+insert into Goalieequipment values(2, 'SR goalie stick', 32, 30, 250);
+insert into GOalieequipment values(3, 'SR goalie skates', 12, 15, 500);
+Insert into Goalieequipment values(4, ' SR goalie pants', 42, 3, 495);
+insert into Goalieequipment values(5, 'SR goalie gloves', 56, 2, 450);
+insert into goalieequipment values(6, 'SR goalie blockers', 56, 4, 295);
+insert into goalieequipment values(7, 'SR goalie helmets', 15, 2, 850);
+insert into goalieequipment values(8, 'SR goalie cups', 36, 5, 50);
+insert into goalieequipment values(9, 'JR Leg pads', 20, 2, 1500);
+insert into goalieequipment values(10, 'JR goalie sticks', 22, 20, 195);
+insert into goalieequipment values(11, 'JR goalie skates', 6, 5, 250);
+insert into goalieequipment values(12, 'JR goalie pants', 22, 4, 199);
+insert into goalieequipment values(13, 'JR goalie gloves', 33, 2, 320);
+insert into goalieequipment values(14, 'JR goalie blockers', 33, 3, 295);
+insert into goalieequipment values(15, 'JR goalie helmets', 10, 2, 750);
+insert into goalieequipment values(16, 'JR goalie cups', 20, 5, 35);
+ 
+ --display the database ordered by price. 
+ select * from goalieequipment
+where price >= 35
+order by price
